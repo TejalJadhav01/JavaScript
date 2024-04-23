@@ -1,0 +1,69 @@
+<html>
+    <head><title></title>
+    <script>
+        function changeSize(){
+         var sizeRef = document.getElementById("size");
+         console.log(sizeRef.value);
+         var h2Ref = document.getElementById("content");
+
+         switch(sizeRef.value){
+
+            case "10" : 
+                h2Ref.style.fontSize = "10px";
+                break;
+            case "20" : 
+                h2Ref.style.fontSize = "20px";
+                break;
+            case "30":
+                h2Ref.style.fontSize = "30px";
+                break;
+            case "36":
+                h2Ref.style.fontSize = "36px";
+                break;
+         }
+    }
+    function changeColor(){
+         var colorRef = document.getElementById("color");
+         console.log(colorRef.value);
+         var h2Ref = document.getElementById("content");
+
+         switch(colorRef.value){
+
+            case "pink" : 
+                h2Ref.style.color = "pink";
+                break;
+            case "gray" : 
+                h2Ref.style.color = "gray";
+                break;
+            case "red":
+                h2Ref.style.color = "red";
+                break;
+            case "blue":
+                h2Ref.style.color = "blue";
+                break;
+         }
+    }
+    </script>
+    </head>
+    <body>
+        <styl</st
+        <div>
+            <select id="size" onchange="changeSize()"> 
+                <option>Select Size</option>
+                <option>10</option>
+                <option>20</option>
+                <option>30</option>
+                <option>36</option>
+            </select>
+
+            <select id="color" onchange="changeColor()"> 
+                <option>Select Color</option>
+                <option>pink</option>
+                <option>gray</option>
+                <option>red</option>
+                <option>blue</option>
+            </select>
+        </div>
+        <h2 id="content">hello Javascript, you are Awesome...!</h2>
+    </body>
+</html>
